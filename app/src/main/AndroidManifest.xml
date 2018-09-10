@@ -16,6 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Change YOUR_PACKAGE_NAME -->
+        <activity   android:name=".GamePlay"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat"/>
+
+        <!-- Change YOUR_PACKAGE_NAME -->
+        <activity   android:name=".GLeaderboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialog"/>
     </application>
 
 </manifest>

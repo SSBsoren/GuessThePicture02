@@ -1,9 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0099cc"
     tools:context=".MainActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/appTitle"
+        style="@style/bText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#333333"
+        android:gravity="center"
+        android:padding="10dp"
+        android:shadowColor="#000"
+        android:shadowDx="1.0"
+        android:shadowDy="1.0"
+        android:shadowRadius="0.7"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/leader_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Super Game! I Like It!"
+        android:textColor="#0099cb" />
+
+    <ImageView
+        android:id="@+id/helpImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="6"
+        android:src="@drawable/logo512" />
+
+    <Button
+        android:id="@+id/start_btn"
+        style="@style/bText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/orange_btns"
+        android:drawableLeft="@drawable/coin"
+        android:paddingLeft="20dp"
+        android:paddingRight="25dp"
+        android:shadowColor="#000"
+        android:shadowDx="1.0"
+        android:shadowDy="1.0"
+        android:shadowRadius="0.7"
+        android:text=" Start Game"
+        android:textColor="#333333"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/leaders_btn"
+        style="@style/sText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/orange_btns"
+        android:drawableLeft="@drawable/coupe"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Top Players" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/sounds"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:src="@drawable/sound_on" />
+
+        <ImageView
+            android:id="@+id/fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginLeft="100dp"
+            android:src="@drawable/fb_help" />
+
+        <ImageView
+            android:id="@+id/reset"
+            android:layout_marginLeft="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:src="@drawable/reset" />
+
+
+
+    </LinearLayout>
+</LinearLayout>
